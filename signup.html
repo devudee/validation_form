@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Student's Sign up Form</h1>
+      <!--Student's First Name  -->
+      <div class="formControl">
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          class="input"
+        />
+        <small>error</small>
+      </div>
+      <!--  studeent's Last Name -->
+      <div class="formControl">
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          class="input"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+        />
+        <small>error</small>
+      </div>
+
+      <!-- Student's User name -->
+      <div class="formControl">
+        <label for="uname">User name:</label>
+        <input
+          type="text"
+          class="input"
+          id="uname"
+          name="uname"
+          placeholder="User Name"
+        />
+        <small>error</small>
+      </div>
+
+      <!-- Student's email -->
+      <div class="formControl">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="Enter Your email"
+        />
+        <small>error</small>
+      </div>
+
+      <!-- Phone Number of student -->
+      <div class="formControl">
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          class="input"
+          name="phone"
+          id="tel"
+          placeholder="+234-0000000000"
+          re
+        />
+        <small>error</small>
+      </div>
+
+      <!-- Password -->
+      <div class="formControl">
+        <label for="pw">Password:</label>
+        <input
+          type="password"
+          class="input"
+          name="pw"
+          id="pw"
+          placeholder="Enter password"
+        />
+        <small>error</small>
+      </div>
+
+      <div class="formControl bt_con">
+        <input class="btn" type="submit" value="Submit" />
+      </div>
+    </form>
+    <script src="./signup.js"></script>
+  </body>
+</html>
