@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data</title>
+    <style>
+      h1 {
+        color: green;
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        font-size: 30px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WELCOME TO DASHBOARD</h1>
+    <p></p>
+
+    <script>
+      const h1 = document.querySelector("h1");
+      const para = document.querySelector("p");
+
+      let userD = localStorage.getItem("user");
+
+      let deta = JSON.parse(userD);
+      para.textContent = [
+        deta.firstName,
+        deta.lastName,
+        deta.email,
+        deta.phone,
+        deta.password,
+      ];
+    </script>
+  </body>
+</html>
