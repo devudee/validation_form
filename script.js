@@ -133,6 +133,27 @@ function validate() {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   validate();
+
+  // STORAGE
+  let fname = firstName.value;
+  let lname = lastName.value;
+  let uname = userName.value;
+  let mail = email.value;
+  let tel = phone.value;
+  let passW = password.value;
+
+  let dataCollation = {
+    firstName: fname,
+    lastName: lname,
+    userName: uname,
+    email: mail,
+    phone: tel,
+    password: passW,
+  };
+
+  let userData = JSON.stringify(dataCollation);
+
+  localStorage.setItem("user", userData);
 });
 
 function isValidEmail(email) {
@@ -148,9 +169,4 @@ function isValidPhone(phone) {
 function isValidPassword(password) {
   let passwordReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
   return passwordReg.test(password);
-}
-// storing Data
-function test() {
-  let firstN = localStorage.setItem("First Name", firstName);
-  return test();
 }
