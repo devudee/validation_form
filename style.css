@@ -68,3 +68,11 @@ input:hover {
 .formControl.error input {
   border: 2px solid red;
 }
+a {
+  text-decoration: none;
+  background-color: yellow;
+  width: fit-content;
+}
+a:hover {
+  color: blue;
+}
